@@ -1,4 +1,4 @@
-n=int(input("digite um número:"))
+numero = int(input("digite um número:"))
 
-print("O seu sucessor é {}".format(n+1))
-print("Seu antecessor é {}".format(n-1))
+print("O seu sucessor é {}".format(numero + 1))
+print("Seu antecessor é {}".format(numero - 1))
