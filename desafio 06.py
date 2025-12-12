@@ -1,7 +1,5 @@
-n=int(input("Digite um Número: "))
+numero = int(input("Digite um Número: "))
 
-print("Dobro = {}".format(n*2))
-print("Triplo = {}".format(n*3))
-print("Raiz Quadrada = {}\n".format(n**(1/2)))
-
-
+print("Dobro = {}".format(numero * 2))
+print("Triplo = {}".format(numero * 3))
+print("Raiz Quadrada = {}".format(numero ** (1 / 2)))

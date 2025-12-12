@@ -1,12 +1,12 @@
-valor=int(input("Digite seu Número: "))
+valor = int(input("Digite seu Número: "))
 
-resultado=True
+resultado = True
 
-if valor <= 1 : resultado= False
+if valor <= 1: resultado = False
 
-for numero in range(2,valor//2+1):
+for numero in range(2, (valor // 2) + 1):
     if valor % numero == 0:
-        resultado= False
+        resultado = False
         break
 
 print("Seu numero é Primo ?")

@@ -1,4 +1,4 @@
-nome=str(input("Digite o nome completo: "))
+nome = str(input("Digite o nome completo: "))
 
 nome_minusculo = nome.lower()
 nome_maiusculo = nome.upper()
