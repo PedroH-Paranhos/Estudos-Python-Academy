@@ -2,14 +2,13 @@ from style import cabeca_style
 
 print(cabeca_style('CADASTRE UMA PESSOA'))
 
-demaior = 0
-homens = 0
-mulheres = 0
+demaior = homens = mulheres = 0
 
 while True:
     idade = int(input(f"\nIdade: "))
-    sexo = str(input(f"Sexo [M/F]: ")).strip().upper()
-    continuar = str(input(f"Deseja continuar? [S/N]: ")).strip().upper()
+    sexo = " "
+    while sexo not in 'MF':
+        sexo = str(input(f"Sexo [M/F]: ")).strip().upper()[0]
 
     if idade > 18:
         demaior += 1
@@ -17,6 +16,10 @@ while True:
         homens += 1
     if sexo == 'F' and idade < 20:
         mulheres += 1
+
+    continuar = ' '
+    while continuar not in 'SN':
+        continuar = str(input(f"Deseja continuar? [S/N]: ")).strip().upper()[0]
 
     if continuar == 'N':
          break
